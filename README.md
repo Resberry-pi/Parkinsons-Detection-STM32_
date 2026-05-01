@@ -184,9 +184,13 @@ Mathematical correctness was verified by comparing UART-logged feature values ag
 **Real-time OLED output — all 29 features scrolling across four screens:**
 
 <p align="center">
-  <img src="docs/oled_1.jpg" width="45%" alt="Screen 1 — F[00]–F[07]: MFCC coefficients"/>
-  <img src="docs/oled_2.jpg" width="45%" alt="Screen 2 — F[08]–F[15]: Higher MFCCs and first NMF stats"/>
-</p>
+  <img src="oled_1.jpg" width="45%" alt="Screen 1 — F[00]–F[07]: MFCC coefficients"/>
+  <img src="oled_2.jpg" width="45%" alt="Screen 2 — F[08]–F[15]: Higher MFCCs and first NMF stats"/>
+</p> <img width="1196" height="1600" alt="oled_4" src="https://github.com/user-attachments/assets/fcb72dc6-c1bc-48fb-a0e5-01c3fd62c71a" />
+<img width="1196" height="1600" alt="oled_3" src="https://github.com/user-attachments/assets/6d0fb5a4-9d1d-42fe-8fba-4c97c85c2237" />
+<img width="1196" height="1600" alt="oled_2" src="https://github.com/user-attachments/assets/002fe825-834e-4375-949f-4c0db37826df" />
+<img width="1196" height="1600" alt="oled_1" src="https://github.com/user-attachments/assets/d338e378-53af-469f-8fb9-6886ce752a97" />
+
 <p align="center">
   <em>Left: F[00]–F[07] — MFCC coefficients. F[00]=−119.83 is the log-energy term.</em>
   &nbsp;&nbsp;&nbsp;
@@ -194,8 +198,8 @@ Mathematical correctness was verified by comparing UART-logged feature values ag
 </p>
 
 <p align="center">
-  <img src="docs/oled_3.jpg" width="45%" alt="Screen 3 — F[16]–F[23]: NMF spectral and temporal statistics"/>
-  <img src="docs/oled_4.jpg" width="45%" alt="Screen 4 — F[24]–F[28]: Final NMF temporal descriptors"/>
+  <img src="oled_3.jpg" width="45%" alt="Screen 3 — F[16]–F[23]: NMF spectral and temporal statistics"/>
+  <img src="oled_4.jpg" width="45%" alt="Screen 4 — F[24]–F[28]: Final NMF temporal descriptors"/>
 </p>
 <p align="center">
   <em>Left: F[16]–F[23] — NMF spectral stats. Kurtosis w=38.46, centroid w=191.47.</em>
@@ -246,6 +250,11 @@ For academic review or collaboration inquiries, please contact:
 rohankumar17362@gmail.com
 [LinkedIn](https://linkedin.com/in/rohan-kumar-singh-b31465268)
 
+---
+
+## Reference
+
+R. K. Singh, "Hardware Implementation of the Speech-Based Parkinson's Disease Detection System on STM32 Nucleo Board," Department of Electronics and Communication Engineering, Babasaheb Bhimrao Ambedkar University, Lucknow, India, 2025.
 ---
 
 ## Reference
