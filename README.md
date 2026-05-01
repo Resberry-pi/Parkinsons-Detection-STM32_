@@ -177,7 +177,21 @@ NMF-TF features outperform MFCCs by 25–35 percentage points across all vowels.
 
 ### On-Device Validation
 
-Mathematical correctness of the embedded computation was verified by comparing UART-logged feature values against an independent Python reference implementation of the identical pipeline applied to the same 224 ms audio segment. Maximum absolute deviation across all 29 features was below 10⁻³, consistent with 32-bit floating-point rounding.
+The board successfully computed all 29 features and produced a classification result within the 224 ms acquisition window. All output is displayed directly on the OLED without any host PC involvement.
+
+Mathematical correctness was verified by comparing UART-logged feature values against an independent Python reference implementation of the identical pipeline. Maximum absolute deviation across all 29 features was below 10⁻³, consistent with 32-bit floating-point rounding.
+
+**Real-time OLED output — all 29 features scrolling across four screens:**
+
+| Screen 1 | Screen 2 |
+|:---:|:---:|
+| ![OLED Screen 1 — F[00]–F[07]: MFCC coefficients](docs/oled_1.jpg) | ![OLED Screen 2 — F[08]–F[15]: Higher MFCCs and first NMF stats](docs/oled_2.jpg) |
+| *F[00]–F[07]: MFCC coefficients. F[00]=−119.83 is the log-energy term.* | *F[08]–F[15]: Higher-order MFCCs and first NMF spectral statistics.* |
+
+| Screen 3 | Screen 4 |
+|:---:|:---:|
+| ![OLED Screen 3 — F[16]–F[23]: NMF spectral and temporal statistics](docs/oled_3.jpg) | ![OLED Screen 4 — F[24]–F[28]: Final NMF temporal descriptors](docs/oled_4.jpg) |
+| *F[16]–F[23]: NMF spectral stats. Kurtosis w=38.46, centroid w=191.47.* | *F[24]–F[28]: Final NMF temporal descriptors.* |
 
 ---
 
