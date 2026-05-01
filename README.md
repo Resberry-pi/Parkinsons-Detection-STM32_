@@ -183,15 +183,27 @@ Mathematical correctness was verified by comparing UART-logged feature values ag
 
 **Real-time OLED output — all 29 features scrolling across four screens:**
 
-| Screen 1 | Screen 2 |
-|:---:|:---:|
-| ![OLED Screen 1 — F[00]–F[07]: MFCC coefficients](docs/oled_1.jpg) | ![OLED Screen 2 — F[08]–F[15]: Higher MFCCs and first NMF stats](docs/oled_2.jpg) |
-| *F[00]–F[07]: MFCC coefficients. F[00]=−119.83 is the log-energy term.* | *F[08]–F[15]: Higher-order MFCCs and first NMF spectral statistics.* |
+<p align="center">
+  <img src="docs/oled_1.jpg" width="45%" alt="Screen 1 — F[00]–F[07]: MFCC coefficients"/>
+  <img src="docs/oled_2.jpg" width="45%" alt="Screen 2 — F[08]–F[15]: Higher MFCCs and first NMF stats"/>
+</p>
+<p align="center">
+  <em>Left: F[00]–F[07] — MFCC coefficients. F[00]=−119.83 is the log-energy term.</em>
+  &nbsp;&nbsp;&nbsp;
+  <em>Right: F[08]–F[15] — Higher-order MFCCs and first NMF spectral statistics.</em>
+</p>
 
-| Screen 3 | Screen 4 |
-|:---:|:---:|
-| ![OLED Screen 3 — F[16]–F[23]: NMF spectral and temporal statistics](docs/oled_3.jpg) | ![OLED Screen 4 — F[24]–F[28]: Final NMF temporal descriptors](docs/oled_4.jpg) |
-| *F[16]–F[23]: NMF spectral stats. Kurtosis w=38.46, centroid w=191.47.* | *F[24]–F[28]: Final NMF temporal descriptors.* |
+<p align="center">
+  <img src="docs/oled_3.jpg" width="45%" alt="Screen 3 — F[16]–F[23]: NMF spectral and temporal statistics"/>
+  <img src="docs/oled_4.jpg" width="45%" alt="Screen 4 — F[24]–F[28]: Final NMF temporal descriptors"/>
+</p>
+<p align="center">
+  <em>Left: F[16]–F[23] — NMF spectral stats. Kurtosis w=38.46, centroid w=191.47.</em>
+  &nbsp;&nbsp;&nbsp;
+  <em>Right: F[24]–F[28] — Final NMF temporal descriptors.</em>
+</p>
+
+
 
 ---
 
